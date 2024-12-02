@@ -32,7 +32,8 @@ include 'init.php';
                         
                             echo "<div class='caption'>";
                                 echo "<h5 class='card-title'><a href='items.php?itemid=".$item['Item_ID']."'>".$item['Name']."</a></h3>";
-                                echo "<p class='card-text'>".$item['Description']."</p>"; 
+                                echo "<p class='card-text text-truncate'>".$item['Description']."</p>";
+                                echo '<button class="btn btn-sm btn-secondary add-to-cart" style="float: left;" data-item-id= "'. $item['Item_ID'].'"> Ajouter au panier</button>'; 
                                 echo "<div class='date'>".$item['Add_Date']."</div>";                  
                             echo '</div>';
                             echo '</div>';

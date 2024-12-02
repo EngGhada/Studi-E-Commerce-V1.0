@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function loadCart() { // load the cart items and update the cart count.
-    fetch('/Ghada_Apps/E-Commerce/includes/cart/get_cart.php')
+    fetch('/E-Commerce/includes/cart/get_cart.php')
         .then(response => response.json())
         .then(cartItems => {
             const cartTable = document.getElementById('cart-items');
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(`Adding item ID: ${itemId} to cart`);
 
             // Send the item ID to the backend
-            fetch('/Ghada_Apps/E-Commerce/includes/cart/add_to_cart.php', {
+            fetch('/E-Commerce/includes/cart/add_to_cart.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ item_id: itemId, quantity: 1 }) // You can set quantity dynamically
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Function to update the quantity of an item in the cart
 function updateCartItem(itemId, change) {
-    fetch('/Ghada_Apps/E-Commerce/includes/cart/update_cart.php', {
+    fetch('/E-Commerce/includes/cart/update_cart.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ item_id: itemId, change: change }) // Pass item ID and change amount
@@ -138,7 +138,7 @@ function updateCartItem(itemId, change) {
 }
 
 function removeCartItem(itemId) {
-    fetch('/Ghada_Apps/E-Commerce/includes/cart/remove_cart_item.php', {
+    fetch('/E-Commerce/includes/cart/remove_cart_item.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ item_id: itemId }) // Pass item ID
@@ -162,7 +162,7 @@ function removeCartItem(itemId) {
 
 function loadCartCountFromServer() {
      
-    fetch('/Ghada_Apps/E-Commerce/includes/cart/get_cart_count.php')
+    fetch('/E-Commerce/includes/cart/get_cart_count.php')
          
         .then(response => response.json())
         .then(data => {
@@ -178,7 +178,7 @@ function clearCartPage() {
         cartSection.innerHTML = `
             <div style="text-align: center; margin-top: 50px;">
                <div class='alert alert-info  comment_msg'> Votre panier est vide.</div>
-               <a href="/Ghada_Apps/E-Commerce/index.php" class="btn btn-primary" style="margin-top: 20px;">Continuer vos achats</a>
+               <a href="/E-Commerce/index.php" class="btn btn-primary" style="margin-top: 20px;">Continuer vos achats</a>
             </div>`;
     }
 }
