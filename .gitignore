@@ -1,0 +1,12 @@
+# Ignore environment file
+.env
+
+# Ignore vendor directory (if not needed in repo)
+/vendor
+
+# Ignore Composer files
+composer.lock
+
+# Other ignored files (optional)
+/node_modules
+/uploads
