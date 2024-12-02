@@ -1,7 +1,7 @@
 <?php
 session_start();
 header("Content-Type: application/json");
-include "../../admin/connect.php";
+include "../../connect.php";
 
 $userId = $_SESSION['uid'];
 

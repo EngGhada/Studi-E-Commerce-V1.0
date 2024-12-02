@@ -3,7 +3,7 @@
 ini_set('display_errors','on');
 error_reporting(E_ALL);
 
-include "admin/connect.php";
+include "connect.php";
 
 $sessionUser='';
 $sessionUserID ='';
@@ -20,7 +20,7 @@ if(isset($_SESSION['User']))
 
 $tpl  ='includes/templates/'; // template directory
 $css  ='layout/css/'; //css directory
-$func='includes/functions/'; //functions directory
+$func ='includes/functions/'; //functions directory
 $js   ='layout/js/'; // javascript directory
 //$lang ='includes/languages/';//languages directory
 

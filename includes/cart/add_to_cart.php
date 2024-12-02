@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 error_log('Debugging add_to_cart.php');
 
 header("Content-Type: application/json");
-include "../../admin/connect.php";
+include "../../connect.php";
 if (!isset($_SESSION['cartCount'])) {
     $_SESSION['cartCount'] = 0;
 }

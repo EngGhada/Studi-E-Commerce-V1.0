@@ -1,7 +1,7 @@
 <?php
 session_start();
 header("Content-Type: application/json");
-include '../../admin/connect.php';
+include '../../connect.php';
 
 $userId = $_SESSION['uid'] ?? 0;
 $data = json_decode(file_get_contents('php://input'), true);
