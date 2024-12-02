@@ -1,10 +1,26 @@
 <?php
     
+    /**
+         **Get All Functions v2.0
+        **Function To Get All records from any table of DB .
+    */
+    function getAllFrom($field , $table , $where = NULL, $and=NULL , $orderfield , $ordering = 'DESC'){
+    
+        global $con;
+        // $sql = $where == NULL ? '' : $where ;
+
+        $getAll = $con->prepare("SELECT $field FROM $table $where $and ORDER BY $orderfield $ordering ");
+        $getAll->execute();
+        $all=$getAll->fetchAll();
+        return $all;
+
+    }
 
     /** Title Function v0.1
      ** Title Function that echo the page title  in case the page has
     **  the variable $pageTitle and echo Default Title for other pages
     **/
+    
     function getTitle(){
 
         global $pageTitle;
@@ -28,20 +44,20 @@
 
         if($url===null){
 
-            $url = 'index.php';
-            $link='Home Page';
+            $url ='dashboard.php';
+            $link='Page d\'accueil';
         }else{
             if(isset($_SERVER['HTTP_REFERER']) && $_SERVER['HTTP_REFERER']!==''){
                 $url =$_SERVER['HTTP_REFERER'];
-                $link='Previous Page';
+                $link='Page Précédente';
             }else{
-                $url = 'index.php';
-                $link ='Home Page';
+                $url = 'dashboard.php';
+                $link ='Page d\'accueil';
             }
         }
 
         echo $theMsg;
-        echo "<div class='alert alert-info'> You will be directed to the $link After $seconds seconds . </div>";
+        echo "<div class='alert alert-info'> Vous serez redirigé vers $link dans $seconds seconds  . </div>";
         header("refresh: $seconds ; url=$url");
         exit();
 
@@ -79,6 +95,7 @@
 
      }
 
+
      /**
       **Get Latest Records Functions v1.0
       **Function To Get Latest Items from DB [users,items,comments].
@@ -97,3 +114,23 @@
         return $rows;
 
       }
+
+      // Function to insert log activity into MongoDB collection "Activities_USER_Log".
+      
+      function logActivity($userID, $action, $details = []) {
+        global $db;
+        
+        $collection = $db->Activities_USER_Log;
+        $log = [
+            'user_id' => $userID,
+            'action' => $action,
+            'details' => $details,
+            'timestamp' => new MongoDB\BSON\UTCDateTime()
+        ];
+        $collection->insertOne($log);
+    }
+
+    // function to truncate text
+    function truncateText($text, $maxLength = 50) {
+        return strlen($text) > $maxLength ? substr($text, 0, $maxLength) . '...' : $text;
+    }
