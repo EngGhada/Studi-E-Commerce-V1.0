@@ -209,9 +209,9 @@ INSERT INTO `users` (`UserID`, `UserName`, `Password`, `Email`, `FullName`, `Gro
 (4, 'Yasin', '$2y$10$B/znh1LXbX.xQNpnN3XPHeN/QG8wTsRxcJ/fT842n1y9nIadNfaFG', 'Yasin@yahoo.cm', 'Yasin Mostafa', 1, 0, 1, '2024-09-28', '95727_male-avatar.png', ''),
 (5, 'Gamila', '$2y$10$P9xMyZ01/KAaIQL8gcbsqOW5DUQ99BiWzXX44Rdybfr7Bn26iC72y', 'gamila@gmail.com', 'Gamila Awad Dawoud ', 0, 0, 0, '2024-09-28', '', ''),
 (6, 'Sarah', '$2y$10$sAKz9uI9u14xTc5AVDnhW.cMDnatmnfNn7N3ObF8.nKjfCXN4ccee', 'Sarah@gmail.com', 'Sarah Fawzi', 1, 0, 1, '2024-10-15', '', ''),
-(7, 'Maiar', '$2y$10$jGbX/YYIzxS01TfcvAdOxOTUmNMT8BSl6eQVAx6fxFzZ16yG7NxPm', 'Maiar@gmail.com', 'Maiar Tolan', 0, 0, 0, '2024-10-15', '72831_beautiful-blonde-woman-avatar.jpg', '34338579c71fd706d28560b453faefb8'),
+(7, 'Maiar', '$2y$10$jGbX/YYIzxS01TfcvAdOxOTUmNMT8BSl6eQVAx6fxFzZ16yG7NxPm', 'Maiar@gmail.com', 'Maiar Tolan', 0, 0, 0, '2024-10-15', '72831_beautiful-blonde-woman-avatar.jpg', ''),
 (8, 'shaheen', '$2y$10$qfB6X4zMFKdn618vgixgbO4pNkPkYV2nXW2EKGiOCh3e.M5irE9MO', 'shaheen@gmail.com', 'Shaheen Wael', 0, 0, 1, '2024-10-15', '', ''),
-(10, 'Ayaat', '$2y$10$z2m.C8KsDNn9U6ymBbHla.z5m3a6K2qCnrsqKUBt/iopZvgl8xx5C', 'ayaat@gmail.com', 'Ayaat Ahmed', 0, 0, 1, '2024-10-21', '', 'dac1c7d035e8a62a566882a08f455d86'),
+(10, 'Ayaat', '$2y$10$z2m.C8KsDNn9U6ymBbHla.z5m3a6K2qCnrsqKUBt/iopZvgl8xx5C', 'ayaat@gmail.com', 'Ayaat Ahmed', 0, 0, 1, '2024-10-21', '', ''),
 (43, 'Gamal', '$2y$10$z4OmJyxhZk42DFMa.YxEker6aDaiGnR2Dnmq9DDjXZPk.0RQjYwa2', 'Gamal@gmail.com', 'Gamal@yahoo.com', 0, 0, 1, '2024-10-29', '96521_male-avatar.png', ''),
 (44, 'Gigi', '$2y$10$TwDaaZcXVBD8N8tA3RQEx.g8Bu9OeneKk7lUOIWBzYYKgXlTcAUJu', 'Gigi@gmail.com', 'Gigi Hassan', 0, 0, 1, '2024-10-29', '30372_beautiful-blonde-woman-avatar.jpg', ''),
 (45, 'Gimi', '$2y$10$WN.kKFS0BeNgPNRJNFxEvO4QHIRfoYNEgJi0bnV6irRpgPJPslkS2', 'Gimi@yahoo.com', 'Gimi Karter', 0, 0, 1, '2024-10-29', '', ''),
@@ -219,7 +219,7 @@ INSERT INTO `users` (`UserID`, `UserName`, `Password`, `Email`, `FullName`, `Gro
 (72, 'Yaso', '$2y$10$evXf4epJA4b52zfHxqfgx.frYw20znyfFy3YhUa1208FCMuwTSf7e', 'Yaso@gmail.com', 'Yaso Nader', 0, 0, 1, '2024-10-29', '', ''),
 (73, 'zinab', '$2y$10$9cbUpKCgIhMcxsfcZYvxseV6u7kK3CwvHvcSuhNrP3ZVkeZppuCsy', 'zinab@gmail.com', 'zinab Naser', 0, 0, 1, '2024-10-29', '8688_beautiful-blonde-woman-avatar.jpg', ''),
 (74, 'Jasmine', '$2y$10$1plLcEx/tv9Dt6BFa6rHw.OeusRunkCQBgOXsF7FtTL4VfPyokKd6', 'Yasmine@gmail.com', 'Yasmine Zakaria', 0, 0, 1, '2024-10-31', '13065_beautiful-blonde-woman-avatar.jpg', ''),
-(78, 'Adam', '$2y$10$tB1nBs9lbtfOOZoXKPqwceWk1F44nHK4v9oI566SvVAvxNc.g6Eg.', 'Adam@gmal.com', 'Adam Zain', 1, 0, 0, '2024-11-07', '', '58f52379f8a3e49792e1f84796a2b427'),
+(78, 'Adam', '$2y$10$tB1nBs9lbtfOOZoXKPqwceWk1F44nHK4v9oI566SvVAvxNc.g6Eg.', 'Adam@gmal.com', 'Adam Zain', 1, 0, 0, '2024-11-07', '', ''),
 (80, 'Samy', '$2y$10$QlZwr4cMDSsj9psaaeL8EOltY1Swn1Oc.L1Xst0kWu4J8Wc2woXZS', 'sam@gmail.com', 'Sam Shaeen', 0, 0, 0, '2024-11-22', '', '');
 
 --
