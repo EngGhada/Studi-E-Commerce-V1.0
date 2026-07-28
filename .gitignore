@@ -1,5 +1,7 @@
 # Ignore environment file
 .env
+.env.*
+!.env.example
 
 # Ignore vendor directory (if not needed in repo)
 /vendor
@@ -7,3 +9,10 @@
 # Other ignored files (optional)
 /node_modules
 /uploads
+
+# Runtime and local tooling
+*.log
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
